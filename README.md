@@ -20,7 +20,7 @@ A jQuery plugin for detect if element is in device viewport.
 ```javascript
 
 $(document).ready( function() {
-	$('.selector').isVisible();
+  $('.selector').isVisible();
 });
 
 ```
@@ -31,8 +31,8 @@ isVisible accepts settings from an object of key/value pairs.
 ##### Example:
 ```javascript
 $('.selector').isVisible({
-	key: value,
-	key: value
+  key: value,
+  key: value
 });
 ```
 
@@ -139,16 +139,18 @@ $('.selector').isVisible({
 #### Event extra parameters (strings):
 
 *visiblePart*: Name of the side visible ( xy, x, top, bottom, left, right )
+
 *scrollDirectionY*: Direction of the scroll on Y axis ( up, down)
+
 *scrollDirectionX*: Direction of the scroll on X axis ( left, right)
 
 
 ##### Example:
 ```javascript
 $('.element').on( 'isVisible', function( event, visiblePart, scrollDirectionY, scrollDirectionX  ) {
-	if ( visiblePart == "y") {
-		// Your code here
-	}
+  if ( visiblePart == "y") {
+    // Your code here
+  }
 });
 ```
 
