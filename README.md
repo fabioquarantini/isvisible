@@ -138,7 +138,7 @@ $('.selector').isVisible({
 
 #### Event extra parameters (strings):
 
-*visiblePart*: Name of the side visible ( xy, x, top, bottom, left, right )
+*visiblePart*: Name of the side visible ( xy, x, y, top, bottom, left, right )
 
 *scrollDirectionY*: Direction of the scroll on Y axis ( up, down)
 
@@ -147,7 +147,7 @@ $('.selector').isVisible({
 
 ##### Example:
 ```javascript
-$('.element').on( 'isVisible', function( event, visiblePart, scrollDirectionY, scrollDirectionX  ) {
+$('.selector').on( 'isVisible', function( event, visiblePart, scrollDirectionY, scrollDirectionX  ) {
   if ( visiblePart == "y") {
     // Your code here
   }
